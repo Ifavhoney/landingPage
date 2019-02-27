@@ -1,0 +1,11 @@
+<% include ./partials/constant/header.ejs %>
+<!-- keep <% %> in index.ejs or it'll throw a 404 error-->
+
+<% if (title == "Home") { %> <% include ./partials/content/home.ejs %> <% } else
+if (title == "About Me") { %> <% include ./partials/content/about.ejs %> <% } else
+if (title == "My Projects") { %> <% include ./partials/content/projects.ejs %> <% }
+if (title == "My Services") { %> <% include ./partials/content/services.ejs %>
+<% } %>
+
+
+<% include ./partials/constant/footer.ejs %>
