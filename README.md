@@ -1,7 +1,6 @@
 # MyPortfolio
-<h1><b>Welcome to My Portfolio! </b></h1>
+<h1><b>Welcome to The Landing Page! </b></h1>
 
-https://portfoliobyme.herokuapp.com/
 
 <h2><b>How To Use It For education purposes? </b></h2>
 

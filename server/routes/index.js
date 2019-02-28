@@ -14,18 +14,17 @@ let indexController = require("../controller/index");
 /* GET home page. */
 router.get("/", indexController.displayHome);
 
-/* GET about page. */
-router.get("/about", indexController.displayAbout);
-
-/* GET Products page. */
-router.get("/Projects", indexController.displayProjects);
-
 /* GET Service page. */
-router.get("/Services", indexController.displayServices);
+router.get("/Service", indexController.displayService);
 
-/* GET Contact page. */
-router.get("/Contact", indexController.displayContact);
-/* POST Contact Page */
-router.post("/Contact", indexController.postContact);
+/* GET About page. */
+router.get("/AboutUs", indexController.displayAboutUs);
+
+/* GET Inbox page. */
+
+router.get("/Inbox", indexController.displayInbox);
+
+
+
 
 module.exports = router;

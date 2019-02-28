@@ -119,15 +119,50 @@ input::placeholder {
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.navbar {
+  text-align:right;
+  width: 100%;
+}
+
+.navbar li {
+  float:left;
+  margin-left:20px;
+
+}
+
+
+
 .navbar-default {
   background-color: var(--navbar-color);
   background-image: none;
   background-repeat: no-repeat;
 }
 
-body {
-  font-family: Mukta, serif;
-  color: var(--color-text);
-  background-color: rgb(185, 126, 126);
-  font-weight: 200;
+
+
+
+/*THIRD PARTY */
+.social-icons-header i:first-of-type {
+    margin-right: 10px !important;
+    margin-left: 0 !important;
+    font-size: 30px;
+  }
+  
+#section-1{
+  /* Time it takes to get there*/
+  animation-delay:1s;
+    /* How Long It takes to arrive at its original position*/
+  animation-duration:1s;
+  /* How many times of occurence*/
+  animation-iteration-count:1s;
+}
+#section-2{
+  animation-delay:2s;
+}
+
+#wrapper {
+  height: 800px;
+  width: 100%;
+  background: url("/Assets/img/banner-bg.jpg") no-repeat center;
+  border-radius: 0 0 50% 50% / 4%;
 }
