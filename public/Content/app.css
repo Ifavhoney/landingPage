@@ -61,6 +61,10 @@ small {
   color: #cedce9;
 }
 
+body{
+  background-color: beige
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -75,6 +79,83 @@ small {
   margin: 0;
   padding: 0;
 }
+
+.features h5 {
+color: rgba(253, 83, 83, 0.692);
+font-weight: 700
+}
+
+.services hr{
+  background-color: rgb(126, 240, 240);
+  color: aqua;
+    border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+    height: 20px;
+}
+
+.services .boxed{
+      width:20%;
+  border-radius: 20px; 
+  border: 10px solid  rgba(253, 83, 83, 0.692) ;
+}
+
+.services h4 {
+color: rgba(253, 83, 83, 0.692);
+font-weight: 700;
+font-size: 3em;
+}
+
+.services .image-container-number1 {
+   width:250px;
+   height:200px;
+}
+
+.services .image-container-number2 {
+   width:170px;
+   height:170px;
+}
+
+
+.services .image-container {
+ width:250px;
+ height:250px;
+}
+
+.services h6 {
+
+      display: inline;
+      font-size: 1em;
+      color:black
+
+
+}
+
+.i-am-centered { margin: auto; max-width: 500px;}
+
+
+.services strong {
+  color: rgba(116, 28, 28, 0.692);
+
+}
+
+.products .services {
+   padding: 70px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+
+background-color: burlywood
+
+}
+
+.products hr {
+    background-color: rgb(62, 143, 180);
+  color: rgb(69, 192, 192);
+    border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+    height: 20px;
+}
+
 
 .logo {
   height: 20%;
