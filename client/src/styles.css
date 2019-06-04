@@ -245,6 +245,6 @@ input::placeholder {
   height: 1000px;
   width: 100%;
   /*Img gotten from https://www.vecteezy.com */
-  background: url("/Assets/img/banner.png") no-repeat center;
+  background: url("assets/Assets/img/banner.png") no-repeat center;
   border-radius: 0 0 50% 50% / 4%;
 }
