@@ -223,11 +223,12 @@ input::placeholder {
 
 
 /*THIRD PARTY */
-.social-icons-header i:first-of-type {
+.social-icons-header {
     margin-right: 10px !important;
     margin-left: 0 !important;
     font-size: 30px;
   }
+
 
 #section-1{
   /* Time it takes to get there*/
