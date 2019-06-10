@@ -15,6 +15,7 @@ import { RegisterComponent } from './pages/register/register.component';
 
 //Services
 import {FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
+import { MealListComponent } from './pages/meal-list/meal-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {FlashMessagesModule, FlashMessagesService } from 'angular2-flash-message
     FooterComponent,
     BodyComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MealListComponent
   ],
   imports: [
     BrowserModule,
