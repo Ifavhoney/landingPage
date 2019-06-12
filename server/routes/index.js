@@ -8,6 +8,7 @@ let express = require("express");
 let router = express.Router();
 
 let indexController = require("../controller/index");
+let mealController = require("../controller/meal");
 
 /*Content For Home */
 
@@ -24,7 +25,6 @@ router.get("/AboutUs", indexController.displayAboutUs);
 
 router.get("/Inbox", indexController.displayInbox);
 
-
 /* POST - processes the Login Page */
 router.post('/login', indexController.processLoginPage);
 
@@ -35,6 +35,9 @@ router.post('/register', indexController.processRegisterPage);
 /* GET - perform user logout */
 router.get('/logout', indexController.performLogout);
 
+
+//DISPLAY MEALS 
+router.get('/meal-list', mealController.displayMeals);
 
 
 module.exports = router;

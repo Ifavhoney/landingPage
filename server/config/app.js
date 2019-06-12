@@ -26,7 +26,7 @@ mongoose.connect(DB.URI, { useNewUrlParser: true });
 
 let mongoDB = mongoose.connection;
 mongoDB.on('error', console.error.bind(console, 'Connection Error:'));
-mongoDB.once('open', ()=> {
+mongoDB.once('open', () => {
   console.log("Connected to MongoDB...");
 });
 
@@ -50,8 +50,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../../public")));
 app.use(express.static(path.join(__dirname, "../../node_modules")));
 
-app.use("/", indexRouter);
-
 // setup express-session
 app.use(session({
   secret: "SomeSecret",
@@ -73,6 +71,16 @@ passport.use(User.createStrategy());
 // serialize and deserialize the User info
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
+// catch 404 and forward to error handler
+app.use(function (req, res, next) {
+  next(createError(404));
+});
+
+app.use("/api", indexRouter);
+app.get('*', (req, res) => {
+  res.sendfile(path.join(__dirname, '../../public/index.html'));
+});
 
 // error handler
 app.use(function (err, req, res, next) {

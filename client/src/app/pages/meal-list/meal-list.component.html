@@ -1,3 +1,17 @@
-<p>
-  meal-list works!
-</p>
+<div class="container">
+  <div class="jumbotron">
+    <h1>{{ title }}</h1>
+
+    <table class="table table-bordered table-striped table-hover">
+      <!-- Header Row-->
+      <tr>
+        <th class="text-centered">Meal Name</th>
+      </tr>
+
+      <!-- Repeatable Template Row-->
+      <tr *ngFor="let meal1 of meals">
+        <td class="text-center">{{ meal1.meal }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
