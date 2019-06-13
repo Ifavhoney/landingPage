@@ -31,7 +31,7 @@ export class MealListComponent implements OnInit {
   displayMealList(): void {
     this.mealService.getList().subscribe(data => {
       if (data.success) {
-        console.log(data);
+        console.log(data.mealList);
         this.mealService = data.mealList;
       } else {
         this.flashMessage.show('User must be logged-in', { cssClass: 'alert-danger', timeOut: 3000 });

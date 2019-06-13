@@ -5,5 +5,4 @@ export class Meal {
     ingredients: String[];
     type: String;
     price: Number;
-
 }

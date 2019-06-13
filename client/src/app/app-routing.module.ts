@@ -8,7 +8,6 @@ import { LoginComponent } from './pages/login/login.component';
 import { MealListComponent } from './pages/meal-list/meal-list.component';
 
 const routes: Routes = [
-
   { path: 'home', component: BodyComponent, data: { title: 'Home' } },
   { path: 'meal-list', component: MealListComponent, data: { title: 'Meals Available' } },
   { path: 'register', component: RegisterComponent, data: { title: 'Register' } },

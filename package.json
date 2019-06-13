@@ -21,11 +21,13 @@
     "npm": "^6.0.0"
   },
   "dependencies": {
+    "@types/cors": "^2.8.5",
     "animate.css": "^3.7.0",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.2.1",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
     "debug": "^4.1.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
