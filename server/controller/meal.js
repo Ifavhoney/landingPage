@@ -1,10 +1,12 @@
 let express = require("express");
 let router = express.Router();
 
+
 let mealModel = require('../models/meal');
+//Show all Meals
 
 module.exports.displayMeals = (req, res, next) => {
-    mealModel.find((err, mealList) => {
+    mealModel.meal.find((err, mealList) => {
         if (err) {
             return console.error('err');
         }

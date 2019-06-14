@@ -18,4 +18,5 @@ let mealSchema = mongoose.Schema(
         collection: "meal"
     }
 );
-module.exports.survey = mongoose.model("Meal", mealSchema);
+//Changed from survey to meal
+module.exports.meal = mongoose.model("Meal", mealSchema);
