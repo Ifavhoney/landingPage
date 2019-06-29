@@ -12,9 +12,10 @@ import { FooterComponent } from './partials/footer/footer.component';
 import { BodyComponent } from './partials/body/body.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { SlideshowModule } from 'ng-simple-slideshow';
 
 //Services
-import {FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
+import { FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
 import { MealListComponent } from './pages/meal-list/meal-list.component';
 
 @NgModule({
@@ -32,6 +33,8 @@ import { MealListComponent } from './pages/meal-list/meal-list.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    SlideshowModule,
+
     FlashMessagesModule
   ],
   providers: [FlashMessagesService],

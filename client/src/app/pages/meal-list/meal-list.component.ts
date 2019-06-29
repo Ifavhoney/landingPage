@@ -25,6 +25,7 @@ export class MealListComponent implements OnInit {
   ngOnInit() {
     this.title = this.route.snapshot.data.title;
     this.meals = new Array<Meal>();
+    console.log("hello");
     this.displayMealList();
   }
 

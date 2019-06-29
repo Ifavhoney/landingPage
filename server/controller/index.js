@@ -12,6 +12,9 @@ module.exports.displayService = (req, res, next) => {
     title: "Service"
   })
 }
+module.exports.sendEmail = (req, res, next) => {
+
+}
 
 module.exports.displayAboutUs = (req, res, next) => {
   res.render("index", {
@@ -26,41 +29,46 @@ module.exports.displayInbox = (req, res, next) => {
   })
 }
 
+
+
+//NOT NECCESSARY ATM
 //Login
 module.exports.processLoginPage = (req, res, next) => {
-  passport.authenticate('local', 
-  (err, user, info) => {
-    // server error?
-    if(err) {
-      return next(err);
-    }
-    // is there a user login error?
-    if(!user) {
-      return res.json({success: false, msg: 'ERROR: Failed to Log In User!'});
-    }
-    req.logIn(user, (err) => {
+  passport.authenticate('local',
+    (err, user, info) => {
       // server error?
-      if(err) {
+      if (err) {
         return next(err);
       }
-
-      const payload = {
-        id: user._id,
-        displayName: user.displayName,
-        username: user.username,
-        email: user.email
+      // is there a user login error?
+      if (!user) {
+        return res.json({ success: false, msg: 'ERROR: Failed to Log In User!' });
       }
+      req.logIn(user, (err) => {
+        // server error?
+        if (err) {
+          return next(err);
+        }
 
-      return res.json({success: true, msg: 'User Logged in Successfully!', user: {
-        id: user._id,
-        displayName: user.displayName,
-        username: user.username,
-        email: user.email
-      }});
+        const payload = {
+          id: user._id,
+          displayName: user.displayName,
+          username: user.username,
+          email: user.email
+        }
+
+        return res.json({
+          success: true, msg: 'User Logged in Successfully!', user: {
+            id: user._id,
+            displayName: user.displayName,
+            username: user.username,
+            email: user.email
+          }
+        });
 
 
-    });
-  })(req, res, next);
+      });
+    })(req, res, next);
 }
 
 
@@ -79,17 +87,17 @@ module.exports.processRegisterPage = (req, res, next) => {
       if (err.name == "UserExistsError") {
         console.log("Error: User Already Exists!");
       }
-      return res.json({success: false, msg: 'ERROR: Failed to Register User!'});
+      return res.json({ success: false, msg: 'ERROR: Failed to Register User!' });
     } else {
       // if no error exists, then registration is successful
 
       // redirect the user
-      return res.json({success: true, msg: 'User Registered Successfully!'});
+      return res.json({ success: true, msg: 'User Registered Successfully!' });
     }
   });
 };
 
 module.exports.performLogout = (req, res, next) => {
   req.logout();
-  res.json({success: true, msg: 'User Successfully Logged out!'});
+  res.json({ success: true, msg: 'User Successfully Logged out!' });
 };

@@ -12,48 +12,60 @@
     <Section class="text-center">
 
       <br> <br> <br>
-      <h1>Features</h1>
+      <h1 class="text-white">Service</h1>
       <br>
 
       <div class="row">
         <div class="col col-md-4 wow lightSpeedIn" data-wow-delay="0.7s">
-          <i class="fas fa-dollar-sign fa-5x"></i>
-          <h5>
-            Economy
-          </h5>
 
-          <p class="text-center">
-            <em>
-              Surveyed affordable for students
-            </em>
-          </p>
+
+          <div class="card border-primary border-success mb-4 bg-info text-white shadow-lg rounded"
+            style="width: 18rem;">
+            <div class="card-body">
+              <i class="fas fa-dollar-sign fa-5x"></i>
+
+              <h5 class="card-title">Prepped</h5>
+              <p class="card-text"> Wether you are a busy mom, or an athlete. Affordable Prepped Meals for everybody!
+              </p>
+            </div>
+          </div>
+
+
+
 
         </div>
 
         <div class="col col-md-4 wow animated zoomInDown">
-          <i class=" fa fa-battery-full fa-5x" aria-hidden="true"></i>
 
-          <h5>
-            Focus
-          </h5>
 
-          <p class="text-center">
-            <em>
-              Worry-less about off-campus neccessaties
-            </em>
-          </p>
+          <div class="card border-success mb-4 bg-info text-white shadow-lg rounded" style="width: 18rem;">
+            <div class="card-body">
+              <i class=" fa fa-battery-full fa-5x" aria-hidden="true"></i>
+
+              <h5 class="card-title">Team</h5>
+              <p class="card-text">
+                We act as a bridge between your local farmers, and chefs to deliver amazingly delicious foods </p>
+            </div>
+          </div>
         </div>
 
         <div class="col col-md-3 wow rollIn delay-2s">
-          <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
-          <h5>
-            Private
-          </h5>
-          <p class="text-center">
-            <em>
-              Ran by your community
-            </em>
-          </p>
+
+
+          <div class="card border-success mb-4 bg-info text-white shadow-lg rounded" style="width: 18rem;">
+            <div class="card-body ">
+              <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
+
+              <h5 class="card-title">Environmental <div>
+                  Friendly
+                </div>
+              </h5>
+              <p class="card-text">All Our Products are 100% degradeable</p>
+            </div>
+          </div>
+
+
+
         </div>
 
       </div>
@@ -75,33 +87,18 @@
       <i class="fab fa-apple fa-2x" aria-hidden="true"></i>
     </div>
 
-    <div class="row">
-      <div class="col col-md-4 wow bounceIn" data-wow-delay=" 0.4s">
-        <img src="assets/Assets/img/Sprites/iphone.png" alt="">
-      </div>
-      <div class="col col-md-6 wow rex-feature-responsive" data-wow-delay="0.4s">
 
-        <br> <br>
-        <div class=" m-5">
+    <div>
 
-          <h4>
-            R e s p o n s i v e
-          </h4>
-
-          <h6>
-            <em>
-
-              Combined with latest technology, and a great team <br>
-              The result
-              is a crazy <strong> Reliable </strong> app.
-            </em>
-
-          </h6>
-
-        </div>
-      </div>
-
+      <slideshow [height]="height" showDots=true [minHeight]="'525px'" [autoPlay]="true" [showArrows]="true"
+        [imageUrls]="imageUrls" [lazyLoad]="imageUrls?.length > 1" [autoPlayWaitForLazyLoad]="true"
+        [autoPlayInterval]=5000>
+      </slideshow>
     </div>
+
+
+
+
 
 
   </div>
@@ -125,150 +122,131 @@
       <div class="container">
 
 
-        <div class="row">
-          <div class="col col-md-3">
-
-          </div>
-
-          <div class="col col-md-4 text-center wow fadeIn slower" data-wow-delay="0.4s">
-            <img class="img-responsive image-container-number1" src="assets/Assets/img/Sprites/number1.png" alt="">
-
-          </div>
-        </div>
-
-        <div class="row wow fadeInUp" data-wow-delay="0.9s">
-          <div class="col col-md-6 text-left">
-            <h4>
-              Moving
-            </h4>
-
-            <h6>
-              <em>
-
-                We Help with getting you In, and out of your dorms
-                <br>
-                Don't know what to bring? We can help you! <br>
-                Together we can take care of the many factors <br>
-                & make your year a piece of cake :)
-
-
-              </em>
-
-            </h6>
-
-          </div>
-          <div class="col col-md-6 text-right">
-
-            <img class="img-responsive image-container" src="assets/Assets/img/Sprites/box.jpg" alt="">
-
-          </div>
-
-        </div>
-        <br><br><br>
-
-
-        <div class="row">
-          <div class="col col-md-4">
-
-          </div>
-
-          <div class="col col-md-5 wow fadeIn slower">
-            <img class="img-responsive image-container-number2" src="assets/Assets/img/Sprites/number2.png" alt="">
-
-          </div>
-        </div>
-
         <div class="row wow fadeInUp" data-wow-delay="0.9s">
 
-          <div class="col col-md-4 ">
+          <!--Section: Contact v.2-->
+          <section class="text-white">
 
-            <img class="img-responsive image-container" src="assets/Assets/img/Sprites/grocery.png" alt="">
+            <!--Section heading-->
+            <h1 class="display-1 text-center font-weight-bold my-4 text-white">Be Ahead Of The Game </h1>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Join now, and recieve
 
+              <br />
+              <i class="fa fa-arrow-right" aria-hidden="true"></i> Coupon codes on local Toronto Restaurants
+              <br />
 
-          </div>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i> Discounted Meals on Prep'n
+              <br />
 
-          <div class="col col-md-4 text-right p-5">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i> Free Deliveries
+              <br />
 
-          </div>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i> Insight on our App's Release
+              <br />
 
-          <div class="col col-md-4 text-right">
-
-
-            <h4>
-              Grocery
-            </h4>
-
-            <h6>
-              <em>
-
-
-
-                Rex offers <strong> Monthly </strong>to <strong>Bi-weekly </strong> grocery
-                <br>deliveries to
-                students living on
-                residence.
-                Wether you are vegetarian, or a fish addict, or plain hungry
-
-                we get you items by the <strong>BULK! </strong>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i> and Much More!
+              <br />
 
 
-              </em>
+              <em> <b> (Spots are limitted) </b> </em> </p>
 
-            </h6>
+            <br>
 
 
-          </div>
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="name" class="">Your name</label>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Your email</label>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                  <!--Grid row-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control">
+                        <label for="subject" class="">Subject</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Grid row-->
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                      <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="2"
+                          class="form-control md-textarea"></textarea>
+                        <label for="message">Your message</label>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                  <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                  <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Toronto, ON, Canada</p>
+                  </li>
+
+                  <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 647 869 9008</p>
+                  </li>
+
+                  <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>cs@prepn.com</p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+            </div>
+
+          </section>
+          <!--Section: Contact v.2-->
+
+
 
         </div>
 
-        <br><br><br>
-
-        <div class="row">
-          <div class="col col-md-4">
-
-          </div>
-
-          <div class="col col-md-5 wow fadeIn slower">
-            <img class="img-responsive image-container-number2" src="assets/Assets/img/Sprites/number3.png" alt="">
-
-          </div>
-        </div>
-
-        <div class="row wow fadeInUp" data-wow-delay="0.9s">
-
-          <div class="col col-md-6 text-left">
-            <br><br><br>
-
-
-            <h4>
-              Eat In
-            </h4>
-
-            <h6>
-              <em>
-
-
-                Be delivered Caf food to wherever you are on Campus <br>
-                <strong> Just order </strong> - <strong>wait a couple</strong> - and <strong>Eat
-                  In!</strong>
-
-
-
-              </em>
-
-            </h6>
-
-
-          </div>
-          <div class="col col-md-5 text-right">
-            <img class="img-responsive image-container" src="assets/Assets/img/Sprites/timer.png" alt="">
-
-
-
-
-          </div>
-
-        </div>
 
 
       </div>

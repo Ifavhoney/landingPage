@@ -56,13 +56,16 @@ Date: February 08 2019
 
 /*Classes */
 
+
+
 small {
   background-color: rgb(172, 48, 48);
   color: #cedce9;
 }
 
 body{
-  background-color: beige
+  background: url("../Assets/img/test3.jpg") repeat center; 
+
 }
 
 .container {
@@ -71,6 +74,44 @@ body{
   margin-right: auto;
   margin-left: auto;
 }
+
+#imageHeader {
+  color: rgb(104, 200, 255); font-family: 'Helvetica Neue', sans-serif;  font-style: italic;  font-size: 40px; font-weight: bold; letter-spacing: -1px; line-height: 1;  
+}
+
+.col-sm-3half, .col-sm-8half {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Media screen adjust */
+
+@media screen and (min-width: 751px) and (max-width: 1200px){
+  img {
+      
+       width: 300px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 750px){
+  img {
+      
+       width: 250px;
+  }
+}
+
+
+/* End media screen adjust */
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin: 50px 60px
+}
+
 
 .family-sans {
   font-family: var(--font-family-sans-serif);
@@ -81,8 +122,14 @@ body{
 }
 
 .features h5 {
-color: rgba(253, 83, 83, 0.692);
+color: rgb(248, 209, 243);
 font-weight: 700
+}
+
+#header {
+  
+  color: red;
+  font-weight: 700
 }
 
 .services hr{
@@ -139,10 +186,13 @@ font-size: 3em;
 }
 
 .products .services {
-   padding: 70px;
+   padding: 20px;
   height: auto;
   width: 100%;
   overflow: hidden;
+
+  background: url("../Assets/img/test6.jpg") repeat center; 
+
 
 background-color: burlywood
 
@@ -241,10 +291,15 @@ input::placeholder {
   animation-delay:2s;
 }
 
+#wrapperHeader {
+  color: rgb(235, 129, 179); font-family: 'Helvetica Neue', sans-serif; font-size: 40px; font-weight: bold; letter-spacing: -1px; line-height: 1;  
+}
+
 #wrapper {
   height: 1000px;
+  background-color: red;
   width: 100%;
   /*Img gotten from https://www.vecteezy.com */
-  background: url("Assets/img/banner.png") no-repeat center;
+  background: url("../Assets/img/assemble.jpg") no-repeat center; 
   border-radius: 0 0 50% 50% / 4%;
 }
