@@ -36,7 +36,7 @@
     "font-awesome": "^4.7.0",
     "http-errors": "^1.7.1",
     "jquery": "^3.3.1",
-    "mongoose": "^5.5.14",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "multer": "^1.4.1",
     "ngx-wow": "^2.0.1",
